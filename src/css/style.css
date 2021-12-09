@@ -1,0 +1,16 @@
+.bar{
+    background: linear-gradient(to right,rgb(250, 127, 37) 0,rgb(253, 190, 19) 90%,rgb(250, 127, 37) 100%);
+    
+    display: block;
+    flex: 0 0 auto;
+    height: 8px;
+    z-index: 5;
+}
+
+.preferences{
+    display: flex;
+}
+
+.lang{
+    margin-left: auto;
+}
