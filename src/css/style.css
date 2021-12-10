@@ -70,7 +70,7 @@ body{
     padding: 0;
 }
 
-input{
+li input{
     width: 98%;
     height: 40px;
     font-size: 1em;
@@ -181,6 +181,45 @@ footer{
     color: inherit;
 }
 
+/* questions */
+.question{
+    padding: 0 0.5em;
+}
+
+.inputDiv{
+    width: 100%;
+}
+
+.inputDiv label{
+    margin-bottom: 0.8em;
+}
+.inputDiv input{
+    width: 99%;
+    height: 30px;
+    font-size: 1.2em;
+    
+}
+
+.buttons{
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+    height: 40px;
+    width: 20%;
+    font-size: inherit;
+    /* margin: 0.5em 0.5em; */
+    background-color: rgb(212 184 163);
+    border: rgb(212 184 163);
+}
+
+.buttons button:nth-of-type(2){
+    background-color: rgb(238 112 35);
+    border: 1px solid rgb(238 112 35);
+}
+
 @media (min-width: 768px) {
     .content{
         display: flex;
@@ -210,4 +249,8 @@ footer{
     .footerLinkTitle{
         border-bottom: 0;
     }
+}
+
+@media (min-width: 992px) {
+
 }

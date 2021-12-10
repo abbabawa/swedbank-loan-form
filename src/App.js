@@ -8,6 +8,7 @@ import Intro from './pages/Intro';
 import './css/style.css'
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import Question from './components/Question';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
 			<div className='content'>
 				<Routes>
 					<Route path="/" element={<Intro />} />
-					{/* <Route path="/" element={<Intro />} /> */}
+					<Route path="/questions" element={<Question />} />
 				</Routes>
 			</div>
 		</main>

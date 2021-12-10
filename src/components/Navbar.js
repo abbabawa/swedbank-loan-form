@@ -32,15 +32,15 @@ const Navbar = ()=>{
                         <FontAwesomeIcon icon={faUserCircle} className="menuIcons" />
                         <FontAwesomeIcon icon={faBars} className="menuIcons" />
                     </div>
-                    <div>
+                    <div className='menuLinks'>
                         <ul>
-                            <li><FontAwesomeIcon icon={faHome}  /></li>
-                            <li>Eceryday Banking</li>
-                            <li>Cards</li>
-                            <li>Loan, leasing</li>
-                            <li>Savings, Investments</li>
-                            <li>Pension</li>
-                            <li>Insurance</li>
+                            <li><Link to=""><FontAwesomeIcon icon={faHome}  /></Link></li>
+                            <li><Link to="">Eceryday Banking</Link></li>
+                            <li><Link to="">Cards</Link></li>
+                            <li><Link to="">Loan, leasing</Link></li>
+                            <li><Link to="">Savings, Investments</Link></li>
+                            <li><Link to="">Pension</Link></li>
+                            <li><Link to="">Insurance</Link></li>
                             <li>
                                 <input type="text" placeholder='search' />
                             </li>
