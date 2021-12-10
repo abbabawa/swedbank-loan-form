@@ -3,6 +3,16 @@ body{
     font-size: 16px;
 }
 
+.navigation{
+    /* border: 2px solid red; */
+}
+
+.link 
+
+.pageHeading, .siteHeader{
+    color: rgb(243 91 28);
+}
+
 .bar{
     background: linear-gradient(to right,rgb(250, 127, 37) 0,rgb(253, 190, 19) 90%,rgb(250, 127, 37) 100%);
     
@@ -39,21 +49,20 @@ body{
 }
 
 .menuBar{
-    padding: 0.6em;
+    /* padding: 0.6em; */
 }
 
 .menuBar div:nth-of-type(3){
     width: 100%;
 }
 
-.menuBar div:nth-of-type(3) ul{
-    margin-left: -0.6em;
+.menuLinks ul{
+    /* margin-left: -0.6em; */
     padding-left: 0;
     border: 0.03em solid rgba(128, 128, 128, 0.8);
     background-color: rgb(251, 255, 255);
     position: absolute;
     width: 100%;
-    display: none;
 
 }
 
@@ -82,14 +91,25 @@ li input{
     margin-left: 0.5em;
 }
 
-.lang ul{
+.hide{
      display: none;
+}
+
+.lang ul{
+    position: absolute;
+    right: 0.2em;
 }
 
 .lang li{
     list-style: none;
     padding: 0.5em;
     background-color: rgb(91, 138, 214);
+    color: #000;
+}
+
+.lang li .langLink{
+    color: #000;
+    text-decoration: none;
 }
 
 .lang span{
@@ -151,8 +171,9 @@ footer{
 
 .quickLinks ul{
     padding: 0;
-    display: none;
+    /* display: none; */
 }
+
 
 .quickLinks li{
     font-size: 1.1em;
@@ -176,7 +197,7 @@ footer{
     margin: 0.8em 0.4em;
 }
 
-.footerLinks{
+.footerLinks, .link{
     text-decoration: none;
     color: inherit;
 }
@@ -208,7 +229,7 @@ footer{
 
 button{
     height: 40px;
-    width: 20%;
+    min-width: 20%;
     background-color: rgb(238 112 35);
     border: 1px solid rgb(238 112 35);
 }
@@ -231,14 +252,31 @@ button{
     border: 1px solid rgb(238 112 35);
 } */
 
+.question{
+    width: 100%;
+    padding: 0em 0.3em;
+}
+
+.textInput{
+    max-width: 100%;
+}
+
 @media (min-width: 768px) {
+    .main{
+        padding: 0em 2.5em;
+    }
+
     .content{
         display: flex;
-        
+        justify-content: center;
     }
 
     .content div:nth-of-type(1){
-        margin-right: 0.2em;
+        /* margin-right: 0.2em; */
+    }
+
+    .buttonDiv button{
+        min-width: 30%;
     }
 
     .quickLinks{
@@ -260,8 +298,40 @@ button{
     .footerLinkTitle{
         border-bottom: 0;
     }
+
+    .question{
+        width: 60%;
+        padding: 0em 0.2em;
+    }
 }
 
 @media (min-width: 992px) {
+    .menuLinks ul{
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
+    .menuLinks ul li:nth-of-type(1){
+        border-left: 0.02em solid rgba(128, 128, 128, 0.5);
+    }
+
+    .menuItem{
+        flex: 50px;
+        border-right: 0.02em solid rgba(128, 128, 128, 0.5);
+        margin: 0em 0em;
+        padding: 0.3em 0.5em;
+        font-size: 1.1em;
+    }
+
+    .userMenu{
+        display: none;
+    }
+
+    .question{
+        width: 40%;
+        padding: 0em 0.2em;
+        margin-bottom: 1.5em;
+    }
 }

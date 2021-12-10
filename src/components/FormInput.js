@@ -13,7 +13,7 @@ const FormInput = (props)=>{
             break;
         
         case "readonly":
-            input = <input type="text" readOnly name="" value={props.value} onChange={props.handleChange} />
+            input = <input type="text" readOnly name="" value={props.value} onChange={props.handleChange} className="textInput" />
             break;
     
         default:

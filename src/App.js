@@ -64,7 +64,7 @@ function App() {
 	<>
 		<Navbar />
 		<main className="main">
-            <h1>Small loan application</h1>
+            <h1 className='pageHeading'>Small loan application</h1>
 			<div className='content'>
 				<Routes>
 					<Route path="/" element={<Intro />} />

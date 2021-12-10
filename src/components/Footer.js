@@ -5,13 +5,21 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faTwitter, faYoutube, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = ()=>{
+    const toggleElem = (e)=>{
+        let elem = e.target.parentNode.children[1]
+        if(elem.classList.contains('hide')){
+            elem.classList.remove('hide')
+        }else{
+            elem.classList.add('hide')
+        }
+    }
     return (
         <footer>
                 <div className="bar">
                 </div>
                 <div className="quickLinks">
                     <div>
-                        <div className="footerLinkTitle">
+                        <div className="footerLinkTitle" >
                             <h3>Contacts </h3>
                         </div>
                         <ul>
@@ -28,11 +36,11 @@ const Footer = ()=>{
                         </p>
                     </div>
                     <div>
-                        <div className="footerLinkTitle">
+                        <div className="footerLinkTitle" onClick={toggleElem}>
                             <h3>Useful Links </h3>
                             <FontAwesomeIcon icon={faCaretDown} className="dropDownIcon" />
                         </div>
-                        <ul>
+                        <ul className='hide'>
                             <li><Link to={''} className='footerLinks' >Sustainability</Link></li>
                             <li><Link to={''} className='footerLinks' >Covid-19</Link></li>
                             <li><Link to={''} className='footerLinks' >Online banking</Link></li>
@@ -41,11 +49,11 @@ const Footer = ()=>{
                         </ul>
                     </div>
                     <div>
-                        <div className="footerLinkTitle">
+                        <div className="footerLinkTitle" onClick={toggleElem}>
                             <h3>Lagal Information </h3>
                             <FontAwesomeIcon icon={faCaretDown} className="dropDownIcon" />
                         </div>
-                        <ul>
+                        <ul className='hide'>
                             <li><Link to={''} className='footerLinks' >Terms and conditions</Link></li>
                             <li><Link to={''} className='footerLinks' >User terms</Link></li>
                             <li><Link to={''} className='footerLinks' >Processing of personal Data</Link></li>
@@ -57,11 +65,11 @@ const Footer = ()=>{
                         </ul>
                     </div>
                     <div>
-                        <div className="footerLinkTitle">
+                        <div className="footerLinkTitle" onClick={toggleElem}>
                             <h3>Customer Programmes </h3>
                             <FontAwesomeIcon icon={faCaretDown} className="dropDownIcon" />
                         </div>
-                        <ul>
+                        <ul className='hide'>
                             <li><Link to={''} className='footerLinks' >Swedbank's youth programme</Link></li>
                             <li><Link to={''} className='footerLinks' >For parents of children and youth</Link></li>
                             <li><Link to={''} className='footerLinks' >For Salary receivers</Link></li>
