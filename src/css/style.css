@@ -252,7 +252,7 @@ button{
     border: 1px solid rgb(238 112 35);
 } */
 
-.question{
+.question, .summary{
     width: 100%;
     padding: 0em 0.3em;
 }
@@ -299,7 +299,7 @@ button{
         border-bottom: 0;
     }
 
-    .question{
+    .question, .summary{
         width: 60%;
         padding: 0em 0.2em;
     }
@@ -329,7 +329,7 @@ button{
         display: none;
     }
 
-    .question{
+    .question, .summary{
         width: 40%;
         padding: 0em 0.2em;
         margin-bottom: 1.5em;

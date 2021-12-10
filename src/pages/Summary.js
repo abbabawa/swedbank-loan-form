@@ -1,6 +1,6 @@
 const Summary = (props)=>{
     return (
-        <div>
+        <div className="summary">
             <div>
                 <h4>Summary</h4>
             </div>
