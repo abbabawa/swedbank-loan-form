@@ -193,7 +193,7 @@ footer{
 .inputDiv label{
     margin-bottom: 0.8em;
 }
-.inputDiv input{
+.inputDiv input, select{
     width: 99%;
     height: 30px;
     font-size: 1.2em;

@@ -11,6 +11,33 @@ import Navbar from './components/Navbar';
 import Question from './pages/Question';
 import Summary from './pages/Summary';
 
+const questions = [
+	{
+		text: "First Name",
+		answer: "",
+		input: "text"
+	},
+	{
+		text: "Last Name",
+		answer: "",
+		input: "text"
+	},
+	{
+		text: "Occupation",
+		options: [{id: 0, name: "Select Occupation", value: ""}, {id: 1, name: "student", value: "student"}, {id: 2, name: "Self employed", value: "Self employed"}, {id: 3, name: "Business owner", value: "Business Owner"}],
+		answer: "",
+		input: "select"
+	}
+]
+
+const getQuestion = (id)=>{console.log(id)
+	return questions[id]
+}
+
+const setAnswer = (id, answer)=>{
+	questions[id].answer = answer
+}
+
 function App() {
   return (
 	<>
@@ -20,8 +47,8 @@ function App() {
 			<div className='content'>
 				<Routes>
 					<Route path="/" element={<Intro />} />
-					<Route path="/questions" element={<Question />} />
-					<Route path="/summary" element={<Summary />} />
+					<Route path="/questions" element={<Question getQuestion={getQuestion} setAnswer={setAnswer} />} />
+					<Route path="/summary" element={<Summary questions={questions} />} />
 				</Routes>
 			</div>
 		</main>
