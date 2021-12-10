@@ -1,4 +1,4 @@
-const Summary = ()=>{
+const Summary = (props)=>{
     return (
         <div>
             <div>
@@ -6,9 +6,11 @@ const Summary = ()=>{
             </div>
             <div>
                 <ol>
-                    <li>Name: Abba Bawa.</li>
-                    <li>Loan Amount: 30,000.00</li>
-                    <li>Occupation: Student</li>
+                    {
+                        props.questions.map(question=>{
+                            return <li key={question.id}>{question.text}: {question.answer.replace("_", " ")}</li>
+                        })
+                    }
                 </ol>
             </div>
             <div className="buttonDiv">

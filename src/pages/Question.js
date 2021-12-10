@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
 import FormInput from "../components/FormInput"
 
 const Question = (props)=>{
@@ -9,25 +10,29 @@ const Question = (props)=>{
 		answer: "",
 		input: ""
 	})
+    const navigate = useNavigate()
 
     useEffect(()=>{
         nextQuestion()
     }, [])
 
     const nextQuestion = ()=>{
+        if(num >= props.maxQuestions){
+            navigate('/summary')
+        }
         if(question.answer === '' && question.text !== ''){
             setMessage('Sorry you must provide the required data before proceeding')
             return
         }
         setNum((prev)=>{
-            if(prev < 2){
+            if(prev < props.maxQuestions){
                 let obj = props.getQuestion(++prev)
-                if(obj){console.log(num)
+                if(obj){console.log(num, obj)
                     setQuestion(obj)
                 }
                 return prev
             }
-            return 2
+            return props.maxQuestions
         });
         setMessage('')
     }

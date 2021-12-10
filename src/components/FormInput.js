@@ -11,6 +11,10 @@ const FormInput = (props)=>{
                     })}
                 </select>)
             break;
+        
+        case "readonly":
+            input = <input type="text" readOnly name="" value={props.value} onChange={props.handleChange} />
+            break;
     
         default:
             input = <input type="text" name="" value={props.value} onChange={props.handleChange} />
