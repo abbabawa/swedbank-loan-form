@@ -8,7 +8,8 @@ import Intro from './pages/Intro';
 import './css/style.css'
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import Question from './components/Question';
+import Question from './pages/Question';
+import Summary from './pages/Summary';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Intro />} />
 					<Route path="/questions" element={<Question />} />
+					<Route path="/summary" element={<Summary />} />
 				</Routes>
 			</div>
 		</main>

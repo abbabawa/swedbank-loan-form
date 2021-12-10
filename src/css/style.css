@@ -200,25 +200,36 @@ footer{
     
 }
 
-.buttons{
+.buttonDiv{
     margin-top: 0.5em;
     display: flex;
     justify-content: space-between;
 }
 
-.buttons button{
+button{
     height: 40px;
     width: 20%;
-    font-size: inherit;
-    /* margin: 0.5em 0.5em; */
+    background-color: rgb(238 112 35);
+    border: 1px solid rgb(238 112 35);
+}
+
+.prev{
     background-color: rgb(212 184 163);
     border: rgb(212 184 163);
 }
 
-.buttons button:nth-of-type(2){
+.buttonDiv button{
+    height: 40px;
+    width: 20%;
+    font-size: inherit;
+    /* margin: 0.5em 0.5em; */
+    
+}
+
+/* .buttonDiv button:nth-of-type(2){
     background-color: rgb(238 112 35);
     border: 1px solid rgb(238 112 35);
-}
+} */
 
 @media (min-width: 768px) {
     .content{

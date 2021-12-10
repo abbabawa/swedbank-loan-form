@@ -10,8 +10,8 @@ const Question = ()=>{
                     <input type="text" name="" />
                 </div>
             </div>
-            <div className="buttons">
-                <button>Previous</button>
+            <div className="buttonDiv">
+                <button className="prev">Previous</button>
                 <button>Next</button>
             </div>
         </div>
