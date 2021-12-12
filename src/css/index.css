@@ -1,0 +1,365 @@
+body{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(251, 242, 234);
+}
+
+.hbar{
+    background: linear-gradient(to right,rgb(250, 127, 37) 0,rgb(253, 190, 19) 90%,rgb(250, 127, 37) 100%); 
+    display: block;
+    flex: 0 0 auto;
+    height: 8px;
+    z-index: 5;
+}
+
+#settings{
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #465B18;
+    color: #FFF;
+}
+
+#settings div:last-of-type{
+    margin-right: 0.8rem;
+}
+
+#settings div:last-of-type ul{
+    position: absolute;
+    right: 0.2rem;
+    top: 1.2rem;
+    padding-left: 0;
+    background-color: rgb(91, 138, 214);
+}
+
+#settings div:last-of-type li{
+    list-style: none;
+    padding: 0.5em;
+    color: #000;
+    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.5);
+}
+
+#settings div:last-of-type li .langLink{
+    color: #000;
+    text-decoration: none;
+}
+
+
+#type span{
+    margin-left: 0.5em;
+    margin-top: 0.8em;
+}
+
+h3{
+    
+}
+
+#menubar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 0em 0.3em;
+}
+
+#menubar h3{
+    padding-left: 0.3em;
+    color: rgb(243 91 28);
+}
+
+.menuIcons{
+    margin: 0.9rem 0.8rem;
+    font-size: 1.6rem;
+}
+
+.menuLinks{
+    width: 100%;
+}
+
+.menuLinks ul{
+    /* margin-left: -0.6em; */
+    padding-left: 0;
+    border: 0.03em solid rgba(128, 128, 128, 0.8);
+    background-color: rgb(251, 255, 255);
+    position: absolute;
+    width: 97%;
+
+}
+
+.menuLinks li{
+    font-size: 1.2em;
+    font-weight: 600;
+    list-style: none;
+    border-bottom: 0.03em solid rgba(128, 128, 128, 0.5);
+    padding: 0.6rem 0.2rem;
+    margin: 0;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+li input{
+    width: 98%;
+    height: 40px;
+    font-size: 1em;
+    border: 0;
+    margin-top: 0;
+}
+
+#pageHeading{
+    padding-left: 0.6em;
+    color: rgb(243 91 28);
+}
+
+#content{
+    background-color: #FFF;
+    padding: 0.8rem 0.8em;
+    margin-bottom: 0.8rem;
+}
+
+.card{
+    background-color: rgb(249 248 246);
+    
+    margin-bottom: 0.8rem;
+    /* margin-top: 0.8rem; */
+}
+
+.card-title{
+    padding: 0.2rem;
+}
+
+#card-title-one{
+    background-color: rgb(197 86 154);
+    /* padding: 0rem 0.5rem; */
+    border: 1px solid rgb(197 86 154);
+}
+
+#card-title-two{
+    background-color: rgb(91 138 214);
+    border: 1px solid rgb(91 138 214);
+}
+
+.card h3{
+    margin: 0.4rem 0.2rem;
+}
+
+.card-body{
+    padding: 0.5rem;
+}
+
+#quickLinks{
+    background-color: rgb(235 231 226);
+    padding: 0.8rem;
+}
+
+.quickLinkTitle{
+    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.quickLinks div:last-of-type .quickLinkTitle{
+    border: 0;
+}
+
+.dropDownIcon{
+    margin-top: 1rem;
+    color: rgb(238, 112, 35);
+}
+
+.quickLinkTitle h4{
+    margin-bottom: 0.5rem;
+}
+
+.link-col ul{
+    padding: 0;
+}
+
+.link-col li{
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.footerLinks{
+    text-decoration: none;
+    color: inherit;
+    
+    /* font-size: 1.1rem; */
+}
+
+.socialsContainer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FFF;
+    padding: 1rem;
+}
+
+.socials{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+/* questions */
+
+.inputDiv{
+    width: 99%;
+}
+
+.inputDiv label{
+    margin-bottom: 0.8em;
+}
+.inputDiv input, select{
+    width: 99%;
+    height: 30px;
+    font-size: 1.2em;
+    
+}
+
+.buttonDiv{
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    height: 40px;
+    min-width: 20%;
+    background-color: rgb(238 112 35);
+    border: 1px solid rgb(238 112 35);
+}
+
+.prev{
+    background-color: rgb(212 184 163);
+    border: rgb(212 184 163);
+}
+
+.buttonDiv button{
+    height: 40px;
+    width: 20%;
+    font-size: inherit;
+    /* margin: 0.5em 0.5em; */
+    
+}
+
+.question, .summary{
+    width: 100%;
+    padding: 0em 0.3em;
+}
+
+.textInput{
+    max-width: 100%;
+}
+
+#searchIcon{
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .buttonDiv button{
+        min-width: 30%;
+    }
+
+    #quickLinks, .intro{
+        display: flex;
+    }
+
+    .intro{
+        justify-content: space-around;
+    }
+
+    .card{
+        width: 49%;
+    }
+
+    .link-col ul{
+        display: block;
+    }
+
+    #quickLinks > .link-col{
+        flex: 1;
+    }
+
+    .dropDownIcon{
+        display: none;
+    }
+
+    .footerLinkTitle{
+        border-bottom: 0;
+    }
+
+    .question, .summary{
+        width: 60%;
+        padding: 0em 0.2em;
+    }
+}
+
+@media (min-width: 992px) {
+
+    #pageHeading{
+        padding-left: 0.9em;
+    }
+    
+    .menuLinks ul{
+        position: static;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuLinks ul li:nth-of-type(1){
+        border-left: 0.02em solid rgba(128, 128, 128, 0.5);
+    }
+
+    .menuIcons{
+        display: none;
+    }
+
+    .menuItem{
+        flex: 50px;
+        border-right: 0.02em solid rgba(128, 128, 128, 0.5);
+        margin: 0em 0em;
+        padding: 0.3em 0.5em;
+        font-size: 0.2rem;
+        text-align: center;
+    }
+
+    .link{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .userMenu{
+        display: none;
+    }
+
+    .question, .summary{
+        width: 40%;
+        padding: 0em 0.2em;
+        margin-bottom: 1.5em;
+    }
+
+    #searchInput{
+        display: none;
+    }
+
+    #searchIcon{
+        display: block;
+        margin-right: 0.6rem;
+        margin-left: 0.6rem;
+    }
+
+    .question, .summary{
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+}

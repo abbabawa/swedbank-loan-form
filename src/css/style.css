@@ -52,8 +52,8 @@ body{
     /* padding: 0.6em; */
 }
 
-.menuBar div:nth-of-type(3){
-    width: 100%;
+.menuLinks{
+    width: 100%;border: 2px solid red;
 }
 
 .menuLinks ul{
