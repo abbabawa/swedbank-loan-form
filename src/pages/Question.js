@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import FormInput from "../components/FormInput"
 
 const Question = (props)=>{
+
     const [num, setNum] = useState(-1)
     const [message, setMessage] = useState('')
     const [question, setQuestion] = useState({

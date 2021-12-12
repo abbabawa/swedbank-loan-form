@@ -1,15 +1,12 @@
-import React from 'react';
+import { Route, Routes } from "react-router-dom"
 
-import {Routes, Route} from 'react-router-dom'
+import './css/index.css'
+import Intro from "./pages/Intro"
+import TestQuestion from "./pages/Question"
+import Summary from './pages/Summary'
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
-import Intro from './pages/Intro';
-
-
-import './css/style.css'
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import Question from './pages/Question';
-import Summary from './pages/Summary';
 
 const questions = [
 	{
@@ -27,7 +24,12 @@ const questions = [
 	{
 		id: 2,
 		text: "Occupation",
-		options: [{id: 0, name: "Select Occupation", value: ""}, {id: 1, name: "student", value: "student"}, {id: 2, name: "Self employed", value: "self_employed"}, {id: 3, name: "Business owner", value: "business_owner"}],
+		options: [
+			{id: 0, name: "Select Occupation", value: ""}, 
+			{id: 1, name: "student", value: "student"}, 
+			{id: 2, name: "Self employed", value: "self_employed"}, 
+			{id: 3, name: "Business owner", value: "business_owner"}
+		],
 		answer: "",
 		input: "select"
 	},
@@ -59,23 +61,25 @@ const setAnswer = (id, answer)=>{
 	questions[id].answer = answer
 }
 
-function App() {
-  return (
-	<>
-		<Navbar />
-		<main className="main">
-            <h1 className='pageHeading'>Small loan application</h1>
-			<div className='content'>
-				<Routes>
-					<Route path="/" element={<Intro />} />
-					<Route path="/questions" element={<Question getQuestion={getQuestion} setAnswer={setAnswer} maxQuestions={questions.length - 1} />} />
-					<Route path="/summary" element={<Summary questions={questions} />} />
-				</Routes>
-			</div>
-		</main>
-		<Footer />
-	</>
-  );
+const App = ()=>{
+    return (
+        <div>
+            <Navbar />
+            <div id="main">
+                <div id="pageHeading">
+                    <h1>Small Loan Application</h1>
+                </div>
+                <div id="content">
+                    <Routes>
+                        <Route path="/" element={<Intro />} />
+                        <Route path="/questions" element={<TestQuestion getQuestion={getQuestion} setAnswer={setAnswer} maxQuestions={questions.length - 1} />} />
+                        <Route path="/summary" element={<Summary questions={questions} />} />
+                    </Routes>
+                </div>
+            </div>
+            <Footer />
+        </div>
+    )
 }
 
-export default App;
+export default App
