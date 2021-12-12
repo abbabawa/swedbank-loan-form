@@ -102,6 +102,11 @@ h3{
     color: inherit;
 }
 
+.menuLinks ul li:first-of-type{
+    border-right: 0.03em solid rgba(128, 128, 128, 0.5);
+    padding: 0.6rem 0.8rem;
+}
+
 li input{
     width: 98%;
     height: 40px;

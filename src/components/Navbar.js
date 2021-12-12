@@ -48,7 +48,7 @@ const Navbar = ()=>{
                     </div>
                     <div className='menuLinks'>
                         <ul className='hide'>
-                            <li ><Link to="" className='link icon'><FontAwesomeIcon icon={faHome}  /></Link></li>
+                            <li ><Link to="" className='link icon' id='homeIcon'><FontAwesomeIcon icon={faHome}  /></Link></li>
                             <li className='menuItem'><Link to="" className='link'>Everyday Banking</Link></li>
                             <li className='menuItem'><Link to="" className='link'>Cards</Link></li>
                             <li className='menuItem'><Link to="" className='link'>Loan, leasing</Link></li>
